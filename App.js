@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 const parent = React.createElement(
     "div",
     { id: "parent" },
@@ -8,8 +11,6 @@ const parent = React.createElement(
     )
 );
 
-const heading = React.createElement("h1", { heading: "Hello world from react CDN Harish" }, "Hello world from react CDN Harish");
+const heading = React.createElement("h1", {}, "Hello world from react CDN Harish");
 const root = ReactDOM.createRoot(document.getElementById("root"));
-setTimeout(() => {
-    root.render(parent);
-}, 2000);
+root.render(parent);
